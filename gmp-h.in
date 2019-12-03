@@ -469,10 +469,10 @@ typedef __mpq_struct *mpq_ptr;
 #define mpq_denref(Q) (&((Q)->_mp_den))
 
 
-#if defined (__cplusplus)
-extern "C" {
-using std::FILE;
-#endif
+// #if defined (__cplusplus)
+// extern "C" {
+// using std::FILE;
+// #endif
 
 #define mp_set_memory_functions __gmp_set_memory_functions
 __GMP_DECLSPEC void mp_set_memory_functions (void *(*) (size_t),
